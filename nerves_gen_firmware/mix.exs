@@ -32,6 +32,7 @@ defmodule NervesGenFirmware.MixProject do
       # Dependencies for all targets
       {:nerves, "~> 1.7.16 or ~> 1.8.0 or ~> 1.9.0", runtime: false},
       {:nerves_gen_ui, path: "../nerves_gen_ui", targets: @all_targets, env: Mix.env()},
+      {:vintage_net_wifi, "~> 0.10", targets: @all_targets},
       {:shoehorn, "~> 0.9.1"},
       {:ring_logger, "~> 0.8.5"},
       {:toolshed, "~> 0.2.26"},
